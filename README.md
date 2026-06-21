@@ -1,0 +1,2 @@
+# -Digital-Transformation-of-Shopfloor-Using-PLC-to-MES-Connectivity-
+Developed a real-time Manufacturing Execution System (MES) by integrating PLC data for live production monitoring. The system collects machine signals and production counts to calculate key performance indicators such as Availability, Performance, Quality, and Overall Equipment Effectiveness (OEE). A dashbord created for  Availability, Performance
