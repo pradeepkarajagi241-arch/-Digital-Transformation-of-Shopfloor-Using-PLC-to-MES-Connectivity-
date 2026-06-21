@@ -1,53 +1,48 @@
-MES Production & OEE Monitoring System
-Overview
+Project Description:
 
-This project is a basic Manufacturing Execution System (MES) simulation developed using Python. It demonstrates production tracking and Overall Equipment Effectiveness (OEE) calculation using Object-Oriented Programming (OOP) concepts.
+Developed a real-time Manufacturing Execution System (MES) by integrating PLC data for live production monitoring. The system collects machine signals and production counts to calculate key performance indicators such as Availability, Performance, Quality, and Overall Equipment Effectiveness (OEE). A dashboard was created to visualize production status and efficiency, enabling better shopfloor visibility and quick decision-making.
 
-Features
-Production count tracking
-Availability calculation
-Performance calculation
-Quality calculation
-Overall Equipment Effectiveness (OEE) calculation
-Python OOP implementation
-Technologies Used
-Python
-Object-Oriented Programming (OOP)
-OEE Formula
-Availability = Runtime / Total Time
+Real-Time Manufacturing Execution System with PLC-Based OEE Monitoring
+Project Overview
 
-Performance = (Cycle Time × Total Count) / Runtime
+This project is a real-time Manufacturing Execution System (MES) designed to collect production data from PLCs and calculate key manufacturing performance metrics. It provides live monitoring of machine status, production counts, and Overall Equipment Effectiveness (OEE) through a visual dashboard.
 
+The system helps improve shopfloor visibility, identify losses, and support data-driven decision-making in manufacturing environments.
+
+Objectives
+Capture real-time production data from PLC signals
+Calculate key KPIs: Availability, Performance, Quality, and OEE
+Monitor machine productivity and downtime
+Visualize production data through dashboards
+Improve overall manufacturing efficiency
+
+System Architecture
+
+PLC → Data Acquisition Layer → Database/MES Layer → Dashboard (Power BI / Visualization Tool)
+
+Key Features
+Real-time machine data collection from PLC tags
+Automatic production count tracking
+OEE calculation (Availability × Performance × Quality)
+Shift-wise and machine-wise performance analysis
+Production loss visibility (downtime, rejects, etc.)
+
+KPIs Calculated
+Availability = Operating Time / Planned Production Time
+Performance = Actual Output / Theoretical Output
 Quality = Good Count / Total Count
-
 OEE = Availability × Performance × Quality
-Project Structure
-Production Class
-    ├── Machine ID
-    ├── Production Count
-    └── Total Production
 
-OEE Class
-    ├── Availability
-    ├── Performance
-    ├── Quality
-    └── OEE Calculation
-Example Output
-Production: 100
-Availability: 0.5
-Performance: 10
-Quality: 0.9
-OEE: 4.5
-Learning Outcomes
-Understanding MES fundamentals
-Applying OOP concepts in manufacturing applications
-Implementing OEE calculations
-Developing basic manufacturing analytics solutions
-Future Enhancements
-Database integration (SQL)
-OPC UA machine connectivity
-Real-time production monitoring
-Dashboard visualization
-Production order management
+Technologies Used
+PLC (Machine Data Source)
+Industrial Communication (OPC / Ethernet / Tag-based communication)
+Python / SQL (Data processing – if applicable)
+Power BI / Dashboard Tool (Visualization)
+
+Results
+Real-time production monitoring achieved
+Accurate OEE tracking per machine/shift
+Improved visibility of production losses
+Faster decision-making for shopfloor operations
 
 This project was created to demonstrate MES and Digital Transformation (DX) concepts used in smart manufacturing environments.
